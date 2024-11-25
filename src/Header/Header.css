@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c7e4b8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    width: 98%;
+    gap: 8px
+    ;
+  }
+
+  .leftContainer{
+    display: flex;
+  }
+  .nameContainer{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .profilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  
+  .header-logo .logo-image {
+    height: 40px;
+  }
+  .header-logo{
+    display: flex;
+  }
+  
+  .header-text  {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .header-options .options-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-options .options-list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .header-options .options-list li a:hover {
+    text-decoration: underline;
+  }
+  

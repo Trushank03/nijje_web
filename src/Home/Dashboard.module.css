@@ -1,0 +1,52 @@
+.outerDiv {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blockContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 blocks per row */
+    gap: 20px; /* Spacing between blocks */
+    width: 100%;
+    max-width: 1200px; /* Optional: Limit container width */
+}
+.dashboardHeading{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.block {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.block:hover {
+    transform: scale(1.05);
+}
+
+.blockTitle {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blockValue {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0;
+    font-weight: bold;
+}

@@ -1,0 +1,129 @@
+.outerDiv {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    /* background-color: #fff; */
+  }
+  
+  .userList {
+    width: 90%;
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    margin-left: 5%;
+  }
+
+  .viewReportBtn{
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .userList h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .userList ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .userItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .userItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .profilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  .userDetail {
+    /* max-width: 600px; */
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* .viewReportBtn{
+    background-color: #808080;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-right: 20px;
+    color: #fff;
+    cursor: pointer;
+  } */
+
+  .viewReportBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+    transition: background-color 0.3s ease;
+}
+
+.viewReportBtn:hover {
+    background-color: #0056b3;
+}
+
+  
+  .userDetail h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .userDetail ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .topicItem {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  .backButton {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .backButton:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,832 @@
+.createAssignmentFormDivParent {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    z-index: 10000;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .createAssignmentForm {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    max-width: 800px;
+    min-width: 370px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    border-color: grey;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding: 30px;
+  }
+  
+  .createAssignmentFormLoading {
+    position: relative;
+    width: 60vw;
+    height: 80vh;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    border-color: grey;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .submittingDiv {
+    padding-top: 100px;
+    color: var(--themeColor);
+  }
+  
+  .closeButtonDiv {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+    border-radius: 5px;
+    margin-top: 7px;
+  }
+  
+  .closeFormButton {
+    border-style: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .closeButtonIcon {
+    font-size: 25px;
+  }
+  
+  .logoAndTitleContainer {
+    margin-top: 30px;
+    height: 80px;
+    width: 80%;
+    background-color: white;
+  }
+  
+  .bwLogo {
+    height: 75px;
+    width: 75px;
+  }
+  
+  .formTitleDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+  }
+  
+  .formTitleDiv i {
+    font-size: 30px;
+    font-style: normal;
+  }
+  
+  .submitButtonDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-top: 50px;
+    border-style: none;
+    padding-bottom: 40px;
+  }
+  
+  .submit_button {
+    width: 40%;
+    border-style: none;
+    background-color: #007bff;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+
+  }
+  
+  .emptyDiv {
+    width: 80%;
+    border-style: solid;
+    height: 100px;
+    color: white;
+  }
+  
+  .optionContainers {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-auto-rows: 80px;
+    border-style: none;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    border-color: red;
+    margin: auto;
+  }
+  
+  .tubeIcon {
+    font-size: 30px;
+    color: #00aff0;
+  }
+  
+  .tubeIconText {
+    font-size: 30px;
+    margin-left: 15px;
+  }
+  .DateField {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    margin-top: 20px;
+  }
+  .DateFieldThree {
+    display: flex;
+    gap: 20px;
+  }
+  .startData {
+    width: 35%;
+  }
+  .dueData {
+    width: 35%;
+  }
+  .creditField {
+    width: 29.5%;
+  }
+  
+  
+  .assignmentTitleDiv{
+    width: 90%;
+     
+  }
+  
+  .assignedByDiv{
+    width: 90%;
+    
+  }
+  .threeDivs{
+    width: 90%;
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .fileUpload{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+  }
+  
+  .questionFilesMetaDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    /* padding-left: 80px; */
+    padding-top: 8px;
+   
+  }
+  
+  .metaDiv{
+    width: 90%;
+  }
+  
+  .borderInput{
+    position: relative;
+      /* width: 100%; */
+      height: 35px;
+      box-sizing: border-box;
+      border-style: solid;
+      border-width: 1px;
+      border-color: lightgrey;
+      background-color: white;
+      border-radius: 5px;
+      padding-left: 10px;
+      font-size: 16px;
+  }
+  
+  .borderInputArea{
+    position: relative;
+      /* width: 100%; */
+      height: 100px;
+      box-sizing: border-box;
+      border-style: solid;
+      border-width: 1px;
+      border-color: lightgrey;
+      background-color: white;
+      border-radius: 5px;
+      padding-left: 10px;
+      font-size: 16px;
+  }
+  
+  .inputDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* margin-bottom: 20px; */
+  }
+  
+  .removeMetaButton{
+  
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-style: none;
+    width: 100px;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+  
+  }
+  .toggleBtn{
+    
+   
+    border-style: none;
+    width: auto;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    
+  }
+  .div{
+    margin-left: auto;
+  }
+  .labelMeta{
+    margin-bottom: 7px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .metaBtn{
+    margin-bottom: 10px;
+  }
+  
+  .addMetaButton{
+    border-style: none;
+    width: 140px;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .statusDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .redStar{
+    color: red;
+    margin-right: 3px;
+  }
+  .label{
+    font-size: 16px;
+  }
+  
+  .btnContainer{
+    display: flex;
+  }
+
+   
+
+.outerDiv{
+    display: flex;
+    width: 90%;
+    border: 1px solid #d3d3d3;
+    display: flex;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title{
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .sameTwo ,.sameThree{
+    font-size: 15px;
+    color: #00000099;
+  
+  }
+  
+  .sameOne{
+  font-size: 16px;
+  font-weight: 10;
+  }
+  
+  .location{
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  .mainDiv{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+    margin-bottom: 15px;
+    /* gap:3px; */
+  }
+  
+  .deleteBtn{
+  background-color: #efefef;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: none;
+  height: 26px;
+  width: 26px;
+  display: flex;
+  
+  align-items: center;
+  margin-left: auto;
+   
+  
+  
+  
+    
+  }
+  
+  .editBtn{
+  background-color: #efefef;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: none;
+  height: 26px;
+  width: 26px;
+  display: flex;
+  
+  align-items: center;
+  margin-left: 20px;
+  /* margin-left: auto; */
+  /* margin-right: 100px; */
+  }
+  
+  
+  .trashBtn{
+  height: 13px;
+  width: 13px;
+  }
+  
+  .warningBlock{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    max-width: 800px;
+    min-width: 370px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    border-color: grey;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    overflow-y: scroll;
+   
+  
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+  
+  .datesContainer{
+    /* justify-content: ce; */
+    display: flex;
+    padding-left: 26px;
+    flex-direction: column;
+  
+    width: 88%;
+    /* gap: 53px; */
+    /* margin: 10px; */
+  }
+  
+  .dateStart {
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .dateEnd{
+      width: 50%;
+    margin: 10px;
+    margin-left: 2px;
+    /* margin-left: auto; */
+    /* margin-right: 66px; */
+  }
+  
+  .closeBtn{
+    margin-left: auto;
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    border-style: none;
+     
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  
+  .heading{
+    display: flex;
+    justify-content: center;
+    color: #585858;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .LeaveReasonConatainer{
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    padding-left: 35px;
+    gap: 20px;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submitContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  margin-bottom: 25px;
+  }
+  
+  
+  
+  .demoText {
+      height: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .icon {
+      height: 80px;
+      width: 80px;
+      background-color: var(--bodyBkgColor);
+      border: 1px solid var(--cardBorderColor);
+      border-radius: 50%;
+    }
+    
+    .title {
+      margin-top: 0;
+      
+    }
+  
+    .btnLeave{
+      /* align-self: flex-start; */
+      /* height: 35px; */
+  
+      background-color: transparent;
+      border: 1px solid var(--themeColor);
+      color: var(--themeColor);
+      margin-left: 10px;
+      padding: 4px;
+      border-radius: 4px;
+      cursor: pointer;
+      
+     
+  
+    /* height: 35px;
+      border-style: solid;
+      font-size: calc( 0.3 * var(--headerHeight) );
+      cursor: pointer;
+      border-width: calc(0.04* var(--headerHeight));
+      border-color: var(--cardBorderColor);
+      background-color: #f2f2f2;
+      
+      font-family: Roboto;
+      border-radius: calc(0.6* var(--cardBorderRadius));
+      padding-left: calc(0.5* var(--headerHeight));
+      padding-right: calc(0.5* var(--headerHeight));
+      border-width: 1px;
+       
+      border-color: var(--themeColor);
+      font-weight: bold;
+    */
+    }
+  
+  
+    .btnContainer{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      height: 40px;
+      /* background-color: #fff; */
+    }
+  
+    .toolContainer{
+      display: flex;
+      height: 1px;
+      margin-left: auto;
+      margin-right: 100px;
+      margin-top: 20px;
+    }
+  
+  
+    .assetItem{
+      display: flex;
+      margin-bottom: 20px;
+    }
+  
+  
+    .scroll{
+        max-height: 400px; /* Adjust as needed */
+        overflow-y: auto;
+  
+    }
+  
+  
+    .divOne{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        gap: 3px;
+    }
+  
+  
+    .outerOneDiv{
+        padding: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+        /* height: 70%; */
+  
+    }
+  
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+  
+        /* max-height: 640px;  */
+        /* overflow: auto; */
+    }
+  
+    .redStar{
+        color: red;
+    }
+  
+    .label{
+        color: #808080;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: 16px;
+    }
+  
+    .borderBox{
+        position: relative;
+        width: 100%;
+        padding: 5px;
+        height: 38px;
+        font-size: 19px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 1px;
+        border-color: lightgrey;
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+  
+    }
+    .borderBoxTwo{
+      position: relative;
+        width: 100%;
+        padding: 5px;
+        height: 34px;
+        font-size: 19px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 1px;
+        border-color: lightgrey;
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+  
+    }
+  
+    .date{
+      position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+  
+    color: #808080;
+    font-size: 17px;
+    }
+  
+  
+    .divDate{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+  
+    .divTwo{
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      width: 40%;
+    }
+  
+  
+  
+  
+    .divThree{
+      display: flex;
+    }
+  
+  
+    .divFour{
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+  
+    .divSix{
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding-left: 2.3rem;
+      padding-right: 2.3rem;
+    }
+  
+  
+    .divFive{
+      display: flex;
+      /* position: relative; */
+        width: 100%;
+        padding: 5px;
+        height: 60px;
+        font-size: 19px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 1px;
+        border-color: lightgrey;
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+  
+  
+    }
+  
+  
+    .submitBtn{
+      width: 130px;
+      height: 35px;
+  
+      align-self: center;
+      /* margin-top: 30px; */
+       
+      border-style: none;
+      background-color: var(--themeColor);
+      color: white;
+      height: 40px;
+      width: 130px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  
+   
+    .submitContainer{
+      display: flex;
+    }
+  
+  
+    .divSeven{
+      display: flex;
+      align-items: center;
+      gap: 10.4%;
+    }
+  
+    .addSkillContainer{
+      display: flex;
+      gap: 8px;
+      
+    }
+  
+  
+    .btnPlus{
+      width: 20%;
+      border-style: none;
+      cursor: pointer;
+  
+      border-radius: 5px;
+    }
+  
+    .option{
+      font-size: 15px;
+      color: #808080;
+    }
+  
+    .divText{
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+  
+  
+    .flexDivOne{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      
+    }
+  
+  
+    .confirmDialog{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      padding: 20px;
+      background-color: white;
+      width: 380px;
+     height: 100px;
+    border-style: solid;
+    border-color: var(--cardBorderColor);  
+    font-family: Roboto; 
+    border-radius: 15px; 
+    border-width: 1px;
+    }
+    
+    .p{
+    color: #808080;
+    padding-left: 4px;
+    }
+    .deleteYes{
+    height: 35px;
+    background-color: #fff;
+    width: 100px;
+    color: #ff0000;
+    border: 2px solid #ff0000 ; 
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .deleteNo{
+      height: 35px;
+    width: 100px;
+    background-color: white;
+    border: 2px solid #0056d2 ; 
+    color: #0056d2;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+    }
+    .div{
+      display: flex;
+      gap: 10%;
+      padding-left: 17%;
+    }
+   
