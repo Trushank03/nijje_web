@@ -7,14 +7,19 @@ const AddQuestionForm = (props) => {
   return (
     <div className={classes.createAssignmentFormDivParent}>
       <form className={classes.createAssignmentForm}  >
-        <div className={classes.closeButtonDiv}>
-          <button   className={classes.closeFormButton}>
+        
+        <div className={classes.backContainer}>
+          
+      <button   className={classes.btnBack} onClick={props.onBack}>
             <AiFillCloseCircle className={classes.closeButtonIcon} />
           </button>
-        </div>
+
+          </div>
+
+
         <div className={classes.logoAndTitleContainer}>
           <div className={classes.formTitleDiv}>
-            <span className={classes.tubeIconText}>Add Questions</span>
+            <span className={classes.tubeIconText}>Add Subjects</span>
           </div>
         </div>
        
@@ -24,11 +29,11 @@ const AddQuestionForm = (props) => {
  
 
 <div className={classes.divSix}>
-  <label className={classes.label} htmlFor="Place Name"><span className={classes.redStar}>*</span>Topic Name </label>
+  <label className={classes.label} htmlFor="Place Name"><span className={classes.redStar}>*</span>Subject Name </label>
   <input className={classes.borderBox} type="text" id="placename" name="placename"  />
 </div>
 <div className={classes.divSix}>
-  <label className={classes.label} htmlFor="Post Office"><span className={classes.redStar}>*</span>Description </label>
+  <label className={classes.label} htmlFor="Post Office"><span className={classes.redStar}>*</span>Subject Description </label>
   <input className={classes.borderBox} type="text" id="postoffice" name="postoffice"  />
 </div>
 

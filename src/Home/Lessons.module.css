@@ -1,4 +1,231 @@
-.createAssignmentFormDivParent {
+.lessonsContainer {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .formTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  
+  .ioo {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    z-index: 10000;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .createAssignmentForm {
+    position: relative;
+    width: 40vw;
+    height: 80vh;
+    max-width: 50px;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    border-color: grey;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding: 30px;
+  }
+  .y{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: start;
+  }
+
+  .createButton {
+    padding: 10px 20px;
+    background-color: #243642;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    margin-left: 5%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .createButton:hover {
+    background-color: #387478;
+  }
+  
+  .lessonForm {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formLabel {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .formLabel2{
+    display: flex;
+    font-weight: bold;
+    /* margin-bottom: 8px; */
+    color: #333;
+  }
+
+  .formSelect2{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    margin-top:4px;
+  }
+  
+  .formSelect,
+  .textInput,
+  .fileInput ,.textInput2{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    /* margin-top: 20px; */
+  }
+  
+  .formSelect:focus,
+  .textInput:focus,
+  .fileInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+
+  .textInput{
+    margin-top: 20px;
+  }
+
+  .textInput2{
+    margin-top: 6px;
+
+  }
+
+  .mcqOptions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px
+    ;
+    }
+    .fif{
+        display: flex;
+        width: 45%;
+        flex-direction: column;
+    }
+
+    .formGroup{
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 20px; */
+    }
+
+    .formGroup2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .fif2{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+.f{
+    display: flex;
+    height: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+    .firstDiv{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        /* flex-direction: column; */
+    }
+  
+  .mcqLabel {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .mcqInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .correctAnswerLabel {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .submitButton:hover {
+    background-color: #218838;
+  }
+  
+
+  .createAssignmentFormDivParent {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -15,8 +242,8 @@
   .createAssignmentForm {
     position: relative;
     width: 80vw;
-    height: 50vh;
-    max-width: 500px;
+    height: 80vh;
+    max-width: 800px;
     min-width: 370px;
     background-color: white;
     border-radius: 5px;
@@ -125,7 +352,7 @@
   .submit_button {
     width: 40%;
     border-style: none;
-    background-color: #243642;
+    background-color: #007bff;
     color: white;
     height: 40px;
     width: 200px;
@@ -314,7 +541,6 @@
   }
   .label{
     font-size: 16px;
-    margin-bottom: 4px;
   }
   
   .btnContainer{
@@ -844,4 +1070,203 @@
       gap: 10%;
       padding-left: 17%;
     }
-   
+    .lessonList {
+        padding: 20px;
+        /* margin: 20px auto; */
+        background-color: #E2F1E7;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        /* max-width: 600px; */
+        width: 85%;
+        margin-top: 20px;
+        margin-left: 5%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      .lessonList h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #333;
+        text-align: center;
+      }
+      
+      .lessonList p {
+        font-size: 1rem;
+        color: #666;
+        text-align: center;
+      }
+      
+      .lessonList ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .lessonList .lessonItem {
+        padding: 10px 15px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #444;
+        display: flex;
+      }
+      .e{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+
+      .e3{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: end;
+        align-items: end;
+      }
+      .lessonList .lessonItem strong {
+        color: #222;
+        font-weight: 600;
+      }
+      
+      .lessonList .lessonItem:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .lessonList {
+          padding: 15px;
+          max-width: 90%;
+        }
+      
+        .lessonList h2 {
+          font-size: 1.25rem;
+        }
+      
+        .lessonList .lessonItem {
+          font-size: 0.9rem;
+        }
+      }
+      .d{
+        display: flex;
+        gap: 5px
+        ;
+      }
+/* Popup Container */
+.popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure popup is on top of other content */
+  }
+  
+  /* Popup Content */
+  .popupContent {
+    background-color: #fff; /* White background for the popup */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%; /* Ensures popup is responsive */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow around popup */
+    position: relative;
+  }
+  
+  /* Close Button */
+  .closePopupButton3 {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .closePopupButton3:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+  }
+  
+  /* Title */
+  .popupContent h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Lesson Details */
+  .popupContent div {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Label Styling (Subject, Topic, etc.) */
+  .popupContent div strong {
+    font-weight: 600;
+    color: #222;
+ 
+  }
+  
+  /* MCQ Options */
+  .popupContent h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    /* display: flex; */
+  }
+  
+  .popupContent div > div {
+    margin-left: 20px;
+    font-size: 16px;
+    display: flex;
+  }
+  
+  .popupContent div > div strong {
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .popupContent div > div span {
+    font-size: 14px;
+    color: #28a745; /* Green color for correct answer */
+  }
+  
+  .popupContent div > div + div {
+    margin-top: 8px;
+  }
+  .s{
+    display: flex;
+    gap: 5px
+    ;
+    margin-left: 20px;
+  }
+
+
+  .viewButton{
+    padding: 10px 20px;
+    background-color: #243642;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    margin-left: 5%;
+    transition: background-color 0.3s ease;
+  }

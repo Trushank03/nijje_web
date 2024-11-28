@@ -53,6 +53,7 @@
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
+    margin-bottom: 4px;
   }
   
   .redStar {
@@ -60,7 +61,7 @@
   }
   
   .borderBox {
-    width: 95%;
+    width: 96%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -75,6 +76,14 @@
     font-size: 1rem;
   }
   
+  .borderBox3 {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
   .submitButtonDiv {
     text-align: center;
     margin-top: 20px;

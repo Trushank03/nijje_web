@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #c7e4b8;
+    background-color: #387478;
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
     width: 98%;
     gap: 8px
     ;
+    color: #fff;
   }
 
   .leftContainer{
@@ -38,7 +39,7 @@
   .header-text  {
     margin: 0;
     font-size: 1.5rem;
-    color: #333;
+    color: #fff;
     display: flex;
     align-items: center;
     margin-left: 10px;

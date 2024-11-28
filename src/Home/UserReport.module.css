@@ -19,6 +19,41 @@
     display: flex;
     margin-left: auto;
   }
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.paginationButton {
+  background-color: #243642;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.paginationButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.paginationButton:hover:enabled {
+  background-color: #243642;
+}
+
+.pageInfo {
+  font-size: 14px;
+  color: #333;
+}
+
   
   .userList h2 {
     text-align: center;
@@ -38,7 +73,7 @@
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    background-color: #f2f2f2;
+    background-color: #E2F1E7;
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
@@ -59,7 +94,7 @@
     /* max-width: 600px; */
     width: 90%;
     margin: 0 auto;
-    background-color: #f2f2f2;
+    background-color: #E2F1E7;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -76,7 +111,7 @@
   } */
 
   .viewReportBtn {
-    background-color: #007bff;
+    background-color: #243642;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -89,7 +124,7 @@
 }
 
 .viewReportBtn:hover {
-    background-color: #0056b3;
+    background-color: #387478;
 }
 
   
@@ -109,13 +144,15 @@
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
+    justify-content: flex-start;
+    display: flex;
   }
   
   .backButton {
     display: block;
-    margin: 0 auto 20px;
+    /* margin: 0 auto 20px; */
     padding: 8px 12px;
-    background-color: #007bff;
+    background-color: #243642;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -124,6 +161,160 @@
   }
   
   .backButton:hover {
+    background-color: #387478;
+  }
+  
+
+  
+  /* Styles for the questions list */
+  .questionsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .questionItem {
+    padding: 10px 15px;
+    /* margin: 5px 0; */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    transition: background-color 0.2s ease;
+
+  }
+  
+  .questionItem:hover {
+    background-color: #e6f7ff;
+  }
+  
+  /* Styles for the "Add Question" button */
+  .addQuestionButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .addQuestionButton:hover {
     background-color: #0056b3;
   }
   
+
+
+  /* Container for each question */
+.questionItem {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Question text */
+  .questionItem p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Styling for answers */
+  .answer {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #e6f7e6;
+    color: #2d7a2d;
+    border: 1px solid #a7d4a7;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .answer2{
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #e6f7e6;
+    color: #2d7a2d;
+    border: 1px solid #a7d4a7;
+    border-radius: 4px;
+    font-size: 14px;
+    /* margin-left: auto; */
+    display: flex;
+  }
+  
+  /* Styling for missing answers */
+  .noAnswer {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #fbe9e9;
+    color: #b94a48;
+    border: 1px solid #f5c6c6;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .k{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px
+    ;
+    margin-bottom: 10px;
+  }
+  .f{
+    display: flex;
+    /* width: 100%; */
+  }
+  
+  /* Styling for options in MCQs */
+  .option {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .option input {
+    margin-right: 8px;
+    accent-color: #4caf50; /* Green-colored radio button */
+  }
+  
+  /* Uploaded file name */
+  .answer p {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  /* Hover effect for each question container */
+  .questionItem:hover {
+    background-color: #f0f4f8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* General utility classes */
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .fileInput {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+.txt{
+    display: flex;
+    margin-bottom: 10px;
+}  
+
+.topicsList{
+  cursor: pointer;
+}

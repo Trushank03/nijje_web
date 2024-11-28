@@ -43,6 +43,8 @@ import Dashboard from "../Home/Dashboard";
 import Questions from "../Home/Question";
 import Test from "../Home/Test";
 import UserReport from "../Home/UserReport";
+import Lessons from "../Home/Lessons";
+import Questions2 from "../Home/Question2";
 
 
 // import Finance from "./Finance";
@@ -343,11 +345,11 @@ const InstituteContentDiv = (props) => {
               <div className={classes.peopleIcon}>
            <BsReceipt />
               </div>
-              <div className={classes.peopleSection}>Manage Questions</div>
+              <div className={classes.peopleSection}>Subjects</div>
             </button>
 
 
-            {/* <button
+            <button
               className={classes.peopleBtn}
               onClick={showBatchesDetailsHandler}
               type="button"
@@ -359,35 +361,35 @@ const InstituteContentDiv = (props) => {
                 <FaUsers />
 
               </div>
-              <div className={classes.peopleSection}>Tests</div>
-            </button> */}
+              <div className={classes.peopleSection}>Topics</div>
+            </button>
 
-            {/* <button
-              className={classes.courseBtn}
-              onClick={showCourseDetailsHandler}
+            <button
+              className={classes.peopleBtn}
+              onClick={showAssetsDetailsHandler}
               type="button"
-              style={instituteCoursesMounted ? mountedButtonStyle : unmountedButtonStyle}
+              style={instituteAssetsMounted ? mountedButtonStyle : unmountedButtonStyle}
             >
               <div className={classes.coursesIcon}>
                 <BsMortarboardFill />
               </div>
-              <div className={classes.coursesSection}>Courses</div>
-            </button> */}
+              <div className={classes.coursesSection}>Lessons</div>
+            </button>
 
 
-            {/*
+            
             <button
-              className={classes.AttendanceBtn}
-              onClick={showAttendanceDetailsHandler}
+              className={classes.peopleBtn}
+              onClick={showCourseDetailsHandler}
               type="button"
-              style={instituteAttendanceMounted ? mountedButtonStyle: unmountedButtonStyle}
+              style={instituteCoursesMounted ? mountedButtonStyle: unmountedButtonStyle}
             >
               <div className={classes.AttendanceIcon}>
                 <BsReceipt />
               </div>
-              <div className={classes.AttendanceSection}>Rules an Regulations</div>
+              <div className={classes.AttendanceSection}>Questions</div>
             </button>
-            */}
+           
 
             <button
               className={classes.AttendanceBtn}
@@ -587,8 +589,19 @@ const InstituteContentDiv = (props) => {
             />}
 
 
+{showAssetsDetails &&
+            <Lessons
+              passMountInfo={setInstituteAssetsMounted}
+               
+            />}
+{showCourseDetails &&
+            <Questions2
+              passMountInfo={setInstituteCoursesMounted}
+              
+            />}
 
-          {/* {showAttendanceDetails &&
+
+          {/* {showCourseDetails &&
             <Attednace
               passMountInfo={setInstituteAttendanceMounted}
               userData={props.userData}

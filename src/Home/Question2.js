@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import classes from "./Questions.module.css";
+import classes from "./Question2.module.css";
 import AddQuestionForm from "../Forms/AddQuestionForm";
 import AddNewQuestion from "../Forms/AddNewQuestion";
 import AddTest from "../Forms/AddTest";
+import NewQuestion from "../Forms/NewQuestion";
 
 const Questions = (props) => {
   const isMounted = useRef(false);
@@ -12,22 +13,12 @@ const Questions = (props) => {
   const [selectedTopic, setSelectedTopic] = useState(null);
   const [questions, setQuestions] = useState([]);
 
-
-  const [showTopicForm, setShowTopicForm] = useState(false);
-
-  const addTopichandler = () => {
-    setShowTopicForm(true);
-  };
-
-   
-  const closeTopicHandler = () => {
-    setShowTopicForm(false);
-  };
-
-  
-
   const addAssignmentHandler = () => {
     setShowAddAssignmentForm(true);
+  };
+
+  const closeAssignmentHandler = () => {
+    setShowAddAssignmentForm(false);
   };
 
   const CloseAssignmentHandler = () => {
@@ -153,7 +144,7 @@ const Questions = (props) => {
               className={classes.createButton}
               onClick={addAssignmentHandler}
             >
-              Create Subjects
+              Create Questions
             </button>
           </div>
 
@@ -161,9 +152,9 @@ const Questions = (props) => {
   <h2>Subject List</h2>
   <ul>
     {[
-      "Subject Name: Topic 1, Subject Description: description of the subject",
-      "Subject Name: Topic 2, Subject Description: description of the subject",
-      "Subject Name: Topic 3, Subject Description: description of the subject",
+      "question preface: randoom text 1, Subject Description: description of the subject",
+      "question preface: randoom text 2, Subject Description: description of the subject",
+      "question preface: randoom text 3, Subject Description: description of the subject",
     ].map((topic, index) => {
       const [subjectName, subjectDescription] = topic.split(","); // Split the string
       return (
@@ -173,7 +164,7 @@ const Questions = (props) => {
           onClick={() => selectTopicHandler(topic)}
         >
           <div className={classes.subjectName}>{subjectName.trim()}</div>
-          <div className={classes.subjectDescription}>{subjectDescription.trim()}</div>
+          {/* <div className={classes.subjectDescription}>{subjectDescription.trim()}</div> */}
         </li>
       );
     })}
@@ -197,7 +188,7 @@ const Questions = (props) => {
             Go Back
           </button>
 
-          <button className={classes.createButton2} onClick={addTopichandler}>
+          <button className={classes.createButton2} onClick={addAssignmentHandler}>
           Create Topics
         </button>
         
@@ -223,15 +214,11 @@ const Questions = (props) => {
       )}
 
       {showAddAssignmentForm && (
-        <AddQuestionForm onBack={CloseAssignmentHandler} />
+        // <AddQuestionForm onBack={CloseAssignmentHandler} />
+        <NewQuestion onBack={closeAssignmentHandler} />
+
 
       )}
-
-      {showTopicForm && (
-          <AddTest onBack={closeTopicHandler}   />
-      )}
-
-      
     </div>
   );
 };
